@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Call Answering - Calls</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta content="On this page users can choose their plan and payment method" name="description" />
+        <meta content="Petar Brkovic" name="author" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <!-- App favicon -->
+        <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+        <!-- Plugin css -->
+        <link href="assets/libs/multiselect/multi-select.css"  rel="stylesheet" type="text/css" />
+        <link href="assets/libs/select2/select2.min.css" rel="stylesheet" type="text/css" />
+
+        <!-- Custom box css -->
+        <link href="assets/libs/custombox/custombox.min.css" rel="stylesheet">
+
+        <!-- App css -->
+        <link href="assets/css/bootstrap.css" rel="stylesheet" type="text/css" />
+        <link  href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/app.css" rel="stylesheet" type="text/css" />
+
+    </head>
+
+    <body>
+
+        <!-- Begin page -->
+        <div id="wrapper">
+
+            <!-- Topbar Start -->
+            <div class="navbar-custom">
+                <ul class="list-unstyled topnav-menu float-right mb-0">
+
+                    <li class="dropdown notification-list">
+
+                        <a class="nav-link dropdown-toggle nav-user mr-0 waves-effect" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+                            <img src="assets/images/users/user-1.jpg" alt="user-image" class="rounded-circle">
+                            <span class="pro-user-name ml-1">Matt <i class="mdi mdi-chevron-down"></i>
+                            </span>
+                        </a>
+
+                        <div class="dropdown-menu dropdown-menu-right profile-dropdown ">
+                            <!-- item-->
+                            <div class="dropdown-header noti-title">
+                                <h6 class="text-overflow m-0">Welcome !</h6>
+                            </div>
+
+                            <!-- item-->
+                            <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                <i class="fe-user"></i>
+                                <span>My Account</span>
+                            </a>
+
+                            <!-- item-->
+                            <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                <i class="fe-settings"></i>
+                                <span>Settings</span>
+                            </a>
+
+                            <!-- item-->
+                            <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                <i class="fe-lock"></i>
+                                <span>Lock Screen</span>
+                            </a>
+
+                            <div class="dropdown-divider"></div>
+
+                            <!-- item-->
+                            <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                <i class="fe-log-out"></i>
+                                <span>Logout</span>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+
+                <!-- LOGO -->
+                <div class="logo-box">
+                    <a href="index.html" class="logo text-center">
+                        <span class="logo-lg">
+                            <img src="assets/images/logo-b&w.png" alt="" height="50">
+                            <!-- <span class="logo-lg-text-light">Xeria</span> -->
+                        </span>
+                        <span class="logo-sm">
+                            <!-- <span class="logo-sm-text-dark">X</span> -->
+                            <img src="assets/images/logo-sm.png" alt="" height="48">
+                        </span>
+                    </a>
+                </div>
+
+                <ul class="list-unstyled topnav-menu topnav-menu-left m-0">
+                    <li>
+                        <button class="button-menu-mobile disable-btn waves-effect">
+                            <i class="fe-menu"></i>
+                        </button>
+                    </li>
+
+                    <li>
+                        <h4 class="page-title-main">Plans</h4>
+                    </li>
+
+                </ul>
+            </div>
+            <!-- end Topbar -->
+
+            <!-- ========== Left Sidebar Start ========== -->
+            <div class="left-side-menu">
+
+                    <!--- Sidemenu -->
+                    <div id="sidebar-menu">
+
+                        <ul class="metismenu" id="side-menu">
+
+                            <li>
+                                <a href="index.html">
+                                    <i class="mdi mdi-view-dashboard"></i>
+                                    <span> Dashboard </span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="calendar.html">
+                                  <span class="badge badge-danger rounded-circle bedz float-right">3</span>
+                                    <i class="fas fa-calendar-alt"></i>
+                                    <span> Calendar </span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="todos.html">
+                                  <span class="badge badge-danger rounded-circle roun float-right">4</span>
+                                    <i class="fas fa-tasks"></i>
+                                    <span>To-dos</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="calls.html">
+                                  <span class="badge badge-danger rounded-circle roun float-right">2</span>
+                                    <i class="fas fa-phone"></i>
+                                    <span>Calls</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="contacts.html">
+                                  <i class="mdi mdi-contacts"></i>
+                                    <span>Contacts</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="javascript: void(0);">
+                                    <i class="fas fa-file-invoice-dollar"></i>
+                                    <span>Billing</span>
+                                    <span class="menu-arrow"></span>
+                                </a>
+                                <ul class="nav-second-level" aria-expanded="false">
+                                    <li><a href="billing.html">Billing</a></li>
+                                    <li><a href="invoices.html">Invoices</a></li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <a href="javascript: void(0);">
+                                    <i class="fas fa-cog"></i>
+                                    <span>Settings</span>
+                                    <span class="menu-arrow"></span>
+                                </a>
+                                <ul class="nav-second-level" aria-expanded="false">
+                                    <li><a href="team.html">Team</a></li>
+                                    <li><a href="plans.html" class="active">Plans</a></li>
+                                    <li><a href="calltypes.html">Call types</a></li>
+                                    <li><a href="faqs.html">Business FAQs</a></li>
+                                    <li><a href="account.html">Account</a></li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <a href="javascript: void(0);">
+                                    <i class="mdi mdi-dots-horizontal"></i>
+                                    <span>More</span>
+                                    <span class="menu-arrow"></span>
+                                </a>
+                                <ul class="nav-second-level" aria-expanded="false">
+                                    <li><a href="reporting.html">Reporting</a></li>
+                                    <li><a href="integrations.html">Integrations</a></li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <a href="typography.html">
+                                  <i class="fas fa-sign-out-alt"></i>
+                                  <span>Logout</span>
+                                </a>
+                            </li>
+
+                            <li id="tour">
+                                <a href="tour.html">
+                                  <img src="assets/images/Tour.png">
+                                  <span>Tour</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="welcome-back">
+                          Welcome back,<br><span class="company-name">ACME Inc</span>
+                        </div>
+
+                    </div>
+                    <!-- End Sidebar -->
+
+                    <div class="clearfix"></div>
+
+                </div>
+                <!-- Sidebar -left -->
+
+            </div>
+            <!-- Left Sidebar End -->
+
+            <!-- ============================================================== -->
+            <!-- Start Page Content here -->
+            <!-- ============================================================== -->
+
+            <div class="content-page">
+                <div class="content">
+
+                    <!-- Start Content-->
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-lg-12">
+                              <div class="card-box">
+                                <h4 class="header-title mb-2">Choose your plan</h4>
+                                <div class="table-responsive">
+                                    <table class="table table-striped mb-0 plans">
+                                        <thead>
+                                        <tr class="tbl-b no-border">
+                                            <th></th>
+                                            <th>OE-20</th>
+                                            <th>OE-50</th>
+                                            <th>OE-100</th>
+                                            <th>OE-300</th>
+                                            <th>OE-650</th>
+                                            <th>OE-1000</th>
+                                            <th>OE-1500</th>
+                                            <th>OE-2500</th>
+                                            <th>OE-5000</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr  class="tbl-b">
+                                            <th scope="row" class="tbl-0">Package cost<br>per month</th>
+                                            <td>$59</td>
+                                            <td>$95</td>
+                                            <td>$149</td>
+                                            <td>$285</td>
+                                            <td>$599</td>
+                                            <td>$899</td>
+                                            <td>$1299</td>
+                                            <td>$2175</td>
+                                            <td>$4299</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row" class="tbl-0">Cost per minute</th>
+                                            <td>$2.90</td>
+                                            <td>$1.90</td>
+                                            <td>$1.50</td>
+                                            <td>$0.95</td>
+                                            <td>$0.92</td>
+                                            <td>$0.90</td>
+                                            <td>$0.88</td>
+                                            <td>$0.87</td>
+                                            <td>$0.86</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row" class="tbl-0">SMS cost</th>
+                                            <td>$0.11</td>
+                                            <td>$0.11</td>
+                                            <td>$0.11</td>
+                                            <td>$0.11</td>
+                                            <td>$0.11</td>
+                                            <td>$0.11</td>
+                                            <td>$0.11</td>
+                                            <td>$0.11</td>
+                                            <td>$0.11</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row" class="tbl-0">Transfer cost<br>(untimed)</th>
+                                            <td>$0.90</td>
+                                            <td>$0.90</td>
+                                            <td>$0.90</td>
+                                            <td>$0.90</td>
+                                            <td>$0.90</td>
+                                            <td>$0.90</td>
+                                            <td>$0.90</td>
+                                            <td>$0.90</td>
+                                            <td>$0.90</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row" class="tbl-0">Users included</th>
+                                            <td>Unlimited</td>
+                                            <td>Unlimited</td>
+                                            <td>Unlimited</td>
+                                            <td>Unlimited</td>
+                                            <td>Unlimited</td>
+                                            <td>Unlimited</td>
+                                            <td>Unlimited</td>
+                                            <td>Unlimited</td>
+                                            <td>Unlimited</td>
+                                        </tr>
+                                        <tr class="success">
+                                            <th scope="row" rowspan="2" class="tbl-0">Package fee*<br><span class="text-xs">(Package cost minus credit for previous package)</span></th>
+                                            <td><i class="fas fa-check"></i></td>
+                                            <td><i class="fas fa-check"></i></td>
+                                            <td><i class="fas fa-check"></i></td>
+                                            <td><i class="fas fa-check"></i></td>
+                                            <td><i class="fas fa-check"></i></td>
+                                            <td><i class="fas fa-check"></i></td>
+                                            <td><i class="fas fa-check"></i></td>
+                                            <td><i class="fas fa-check"></i></td>
+                                            <td><i class="fas fa-check"></i></td>
+                                        </tr>
+                                        <tr>
+
+                                            <td><button type="button" class="btn btn-success waves-effect width-sm waves-light">Select</button></td>
+                                            <td><button type="button" class="btn btn-success waves-effect width-sm waves-light">Select</button></td>
+                                            <td><button type="button" class="btn btn-success waves-effect width-sm waves-light">Select</button></td>
+                                            <td><button type="button" class="btn btn-success waves-effect width-sm waves-light">Select</button></td>
+                                            <td><button type="button" class="btn btn-success waves-effect width-sm waves-light">Select</button></td>
+                                            <td><button type="button" class="btn btn-success waves-effect width-sm waves-light">Select</button></td>
+                                            <td><button type="button" class="btn btn-success waves-effect width-sm waves-light">Select</button></td>
+                                            <td><button type="button" class="btn btn-success waves-effect width-sm waves-light">Select</button></td>
+                                            <td><button type="button" class="btn btn-success waves-effect width-sm waves-light">Select</button></td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                  </div>
+                                    <h4 class="header-title mb-2 mt-3 pb-2">Payment details</h4>
+                                    <div class="row">
+                                    <div class="credit-cards col-lg-9">
+                                      <a href="index.html"><div class="add-new-card mb-4">
+                                        <div class="pt-4">
+                                          <i class="fas fa-plus mt-2"></i>
+                                          <p class="font-16">Add new card</p>
+                                        </div>
+                                      </div>
+                                    </a>
+                                    </div>
+                                    <div class="col-lg-3">
+                                      <p>The initial charge*:</p>
+                                        <p class="text-center amount">$111.83</p>
+                                        <button type="button" class="btn btn-success waves-effect btn-block waves-light">Select</button>
+                                        <p class="text-sm">*Includes a credit balance of $50 and CC fees</p>
+                                  </div>
+                                  </div>
+
+                              </div>
+                            </div>
+                            </div> <!-- end row -->
+
+                    </div> <!-- container-fluid -->
+
+                </div> <!-- content -->
+
+                <!-- Footer Start -->
+                <footer class="footer">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-6">
+                               2016 - 2019 &copy; Adminto theme by <a href="">Coderthemes</a>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="text-md-right footer-links d-none d-sm-block">
+                                    <a href="javascript:void(0);">About Us</a>
+                                    <a href="javascript:void(0);">Help</a>
+                                    <a href="javascript:void(0);">Contact Us</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+                <!-- end Footer -->
+            <!-- ============================================================== -->
+            <!-- End Page content -->
+            <!-- ============================================================== -->
+
+        </div>
+        <!-- END wrapper -->
+
+        <!-- Vendor js -->
+        <script src="assets/js/vendor.min.js"></script>
+
+        <!-- custombox -->
+        <script src="assets/libs/custombox/custombox.min.js"></script>
+
+        <!-- Mulitselect -->
+        <script src="assets/libs/multiselect/jquery.multi-select.js"></script>
+        <script src="assets/libs/select2/select2.min.js"></script>
+
+        <!-- Init js-->
+        <script src="assets/js/pages/form-advanced.init.js"></script>
+
+        <!-- App js -->
+        <script src="assets/js/app.min.js"></script>
+
+    </body>
+</html>
